@@ -1,12 +1,12 @@
 package basicTask
 
-func IsPalindrome(str string) bool {
+func IsPalindrome(inStr string) bool {
 
 	s := 0
-	e := len(str)-1
+	e := len(inStr)-1
 	
 	for ; s < e; {
-		if str[s] != str[e] { return false }
+		if inStr[s] != inStr[e] { return false }
 		 s++; e--
 	}
 	return true
